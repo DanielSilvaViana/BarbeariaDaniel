@@ -10,8 +10,6 @@
     <Folder Include="Excecoes\" />
     <Folder Include="ObjetosDeValor\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="Enumeradores\" />
-    <Folder Include="Entidades\" />
   </ItemGroup>
 
   <ItemGroup>
