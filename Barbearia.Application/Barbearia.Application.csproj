@@ -11,10 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Servicos\" />
+    <Folder Include="CasosDeUso\" />
     <Folder Include="Validacoes\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="DTOs\" />
   </ItemGroup>
 
   <ItemGroup>
