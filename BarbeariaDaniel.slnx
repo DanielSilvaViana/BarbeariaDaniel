@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Barbearia.Application/Barbearia.Application.csproj" />
+  <Project Path="Barbearia.Domain/Barbearia.Domain.csproj" />
+  <Project Path="Barbearia.Infrastructure/Barbearia.Infrastructure.csproj" />
+  <Project Path="Barbearia.Tests/Barbearia.Tests.csproj" />
+  <Project Path="BarbeariaApi/BarbeariaApi.csproj" />
+</Solution>
