@@ -5,9 +5,9 @@ using Barbearia.Application.DTOs.Clientes;
 
 namespace Barbearia.Application.Interfaces.CasosDeUso.Clientes;
 
-public interface ICadastrarClienteCasoDeUso
+public interface IConsultarClienteCasoDeUso
 {
     Task<ClienteResponse> ExecutarAsync(
-        CadastrarClienteRequest request,
+        Guid id,
         CancellationToken cancellationToken = default);
 }

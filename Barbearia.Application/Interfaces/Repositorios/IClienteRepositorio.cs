@@ -23,6 +23,13 @@ public interface IClienteRepositorio
         string telefone,
         CancellationToken cancellationToken);
 
+    Task<bool> ExisteTelefoneParaOutroClienteAsync(
+    string telefone,
+    Guid clienteId,
+    CancellationToken cancellationToken);
+
     Task SalvarAlteracoesAsync(
         CancellationToken cancellationToken);
+
+    
 }

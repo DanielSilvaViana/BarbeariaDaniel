@@ -1,9 +1,11 @@
 using Scalar.AspNetCore;
+using Barbearia.Application.Dependencias;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
+builder.Services.AdicionarApplication();
 
 var app = builder.Build();
 
