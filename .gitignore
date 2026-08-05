@@ -361,3 +361,68 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+
+###############################################################
+# BARBEARIA API
+###############################################################
+
+# Configurações locais
+**/appsettings.Local.json
+**/appsettings.Test.json
+
+# User Secrets (.NET)
+secrets.json
+
+# Rider / JetBrains
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# PostgreSQL
+*.backup
+*.dump
+*.sql
+
+# Cobertura de testes
+coverage/
+TestResults/
+
+# Relatórios
+*.trx
+
+# Docker
+docker-compose.override.yml
+
+# Logs
+*.log
+
+# Ambiente
+.env
+.env.*
+
+# Certificados
+*.pfx
+*.pem
+*.key
+
+# Terraform (para quando usarmos AWS)
+.terraform/
+terraform.tfstate
+terraform.tfstate.*
+*.tfvars
+
+# AWS
+.aws-sam/
+cdk.out/
+
+# Node (caso façamos um front React)
+node_modules/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini

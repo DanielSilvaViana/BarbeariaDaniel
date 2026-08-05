@@ -10,6 +10,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="appsettings.Test.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>
@@ -44,6 +52,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Barbearia.Application\Barbearia.Application.csproj" />
     <ProjectReference Include="..\Barbearia.Domain\Barbearia.Domain.csproj" />
+    <ProjectReference Include="..\Barbearia.Infrastructure\Barbearia.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
