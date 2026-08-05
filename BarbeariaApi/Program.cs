@@ -1,6 +1,7 @@
 using Scalar.AspNetCore;
 using Barbearia.Application.Dependencias;
 using Barbearia.Infrastructure.Dependencias;
+using BarbeariaApi.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +29,8 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+app.UseMiddleware<TratamentoExcecoesMiddleware>();
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
@@ -35,3 +38,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+public partial class Program
+{
+}

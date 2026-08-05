@@ -29,6 +29,7 @@
         buildtransitive
       </IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="10.0.10" />
 
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
 
@@ -53,6 +54,7 @@
     <ProjectReference Include="..\Barbearia.Application\Barbearia.Application.csproj" />
     <ProjectReference Include="..\Barbearia.Domain\Barbearia.Domain.csproj" />
     <ProjectReference Include="..\Barbearia.Infrastructure\Barbearia.Infrastructure.csproj" />
+    <ProjectReference Include="..\BarbeariaApi\BarbeariaApi.csproj" />
   </ItemGroup>
 
   <ItemGroup>
