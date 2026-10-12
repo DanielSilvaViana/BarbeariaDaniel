@@ -1,6 +1,5 @@
 ﻿using Barbearia.Infrastructure.Dados.Contextos;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
 namespace Barbearia.Tests.Infrastructure.BancoDeDados;
 
@@ -10,21 +9,8 @@ public sealed class PostgreSqlFixture : IAsyncLifetime
 
     public async Task InitializeAsync()
     {
-        var configuration = new ConfigurationBuilder()
-            .SetBasePath(AppContext.BaseDirectory)
-            .AddJsonFile(
-                "appsettings.Test.json",
-                optional: false)
-            .Build();
-
         var connectionString =
-            configuration.GetConnectionString("PostgreSql");
-
-        if (string.IsNullOrWhiteSpace(connectionString))
-        {
-            throw new InvalidOperationException(
-                "A connection string de testes não foi configurada.");
-        }
+            ConfiguracaoTestes.ObterConnectionString();
 
         var options =
             new DbContextOptionsBuilder<BarbeariaDbContext>()

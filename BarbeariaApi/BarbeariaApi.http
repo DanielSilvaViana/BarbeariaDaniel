@@ -1,6 +1,22 @@
 @BarbeariaApi_HostAddress = http://localhost:5263
 
-GET {{BarbeariaApi_HostAddress}}/weatherforecast/
+GET {{BarbeariaApi_HostAddress}}/api/saude
 Accept: application/json
+
+###
+
+GET {{BarbeariaApi_HostAddress}}/api/clientes
+Accept: application/json
+
+###
+
+POST {{BarbeariaApi_HostAddress}}/api/clientes
+Content-Type: application/json
+
+{
+  "nome": "Cliente Teste",
+  "telefone": "11999990000",
+  "email": "cliente@teste.com"
+}
 
 ###

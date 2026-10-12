@@ -1,19 +1,30 @@
 ﻿using System.Net;
 using System.Net.Http.Json;
 using Barbearia.Application.DTOs.Clientes;
+using Barbearia.Tests.Infrastructure.BancoDeDados;
 
 namespace Barbearia.Tests.Api;
 
+// Compartilha a collection com os testes de repositório para não rodar
+// em paralelo sobre o mesmo banco.
+[Collection(PostgreSqlCollection.NomeColecao)]
 public sealed class ClientesEndpointTests
-    : IClassFixture<BarbeariaApiFactory>
+    : IClassFixture<BarbeariaApiFactory>, IAsyncLifetime
 {
+    private readonly PostgreSqlFixture _fixture;
     private readonly HttpClient _client;
 
     public ClientesEndpointTests(
+        PostgreSqlFixture fixture,
         BarbeariaApiFactory factory)
     {
+        _fixture = fixture;
         _client = factory.CreateClient();
     }
+
+    public Task InitializeAsync() => _fixture.LimparBancoAsync();
+
+    public Task DisposeAsync() => Task.CompletedTask;
 
     [Fact]
     public async Task Post_DeveRetornar201_QuandoRequestForValido()

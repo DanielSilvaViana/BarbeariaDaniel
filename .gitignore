@@ -370,6 +370,7 @@ FodyWeavers.xsd
 # Configurações locais
 **/appsettings.Local.json
 **/appsettings.Test.json
+**/appsettings.Development.json
 
 # User Secrets (.NET)
 secrets.json
@@ -378,7 +379,7 @@ secrets.json
 .idea/
 
 # Visual Studio Code
-.vscode/
+/.vscode/
 
 # PostgreSQL
 *.backup
@@ -401,6 +402,7 @@ docker-compose.override.yml
 # Ambiente
 .env
 .env.*
+!.env.example
 
 # Certificados
 *.pfx

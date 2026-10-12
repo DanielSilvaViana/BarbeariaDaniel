@@ -1,0 +1,175 @@
+.header {
+  height: 76px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e4e7ec;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 32px;
+
+  color: #172033;
+
+  box-shadow:
+    0 2px 8px rgba(16, 24, 40, 0.04);
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-left {
+  gap: 18px;
+}
+
+.header-right {
+  gap: 12px;
+}
+
+.menu-button,
+.notification-button {
+  border: none;
+
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.menu-button {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  font-size: 22px;
+
+  color: #0b203b;
+}
+
+.menu-button:hover {
+  background: #f2f4f7;
+}
+
+.header-brand {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.system-name {
+  font-family: Georgia, 'Times New Roman', serif;
+
+  font-size: 27px;
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  color: #10233d;
+}
+
+.system-subtitle {
+  font-size: 11px;
+
+  color: #98a2b3;
+}
+
+.notification-button {
+  position: relative;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  color: #0b203b;
+
+  font-size: 23px;
+}
+
+.notification-button:hover {
+  background: #f2f4f7;
+}
+
+.notification-badge {
+  position: absolute;
+
+  top: 1px;
+  right: 0;
+
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+
+  background: #c62828;
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0b203b,
+      #12345a
+    );
+
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  border: 2px solid #e4e7ec;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info strong {
+  font-size: 13px;
+
+  color: #172033;
+}
+
+.user-info span {
+  margin-top: 2px;
+
+  font-size: 11px;
+
+  color: #98a2b3;
+}
+
+.arrow {
+  margin-left: 3px;
+
+  color: #667085;
+}

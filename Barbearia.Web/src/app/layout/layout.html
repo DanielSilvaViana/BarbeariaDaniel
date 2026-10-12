@@ -1,0 +1,233 @@
+<div class="app-layout">
+  <app-sidebar></app-sidebar>
+
+  <div class="main-area">
+    <app-header></app-header>
+
+    <main class="content">
+
+      <section class="page-header">
+        <div>
+          <h1>Dashboard</h1>
+
+          <p>
+            Visão geral da sua barbearia
+          </p>
+        </div>
+
+        <button class="new-schedule-button">
+          + Novo agendamento
+        </button>
+      </section>
+
+      <section class="stats-grid">
+
+        <div class="stat-card">
+          <div class="stat-icon blue">
+            ♙
+          </div>
+
+          <div class="stat-content">
+            <span>Clientes cadastrados</span>
+
+            <strong>128</strong>
+
+            <small>
+              +12 este mês
+            </small>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon red">
+            ▣
+          </div>
+
+          <div class="stat-content">
+            <span>Agendamentos hoje</span>
+
+            <strong>18</strong>
+
+            <small>
+              4 ainda disponíveis
+            </small>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon blue">
+            $
+          </div>
+
+          <div class="stat-content">
+            <span>Faturamento do dia</span>
+
+            <strong>R$ 2.450</strong>
+
+            <small>
+              +8% em relação a ontem
+            </small>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon red">
+            ✂
+          </div>
+
+          <div class="stat-content">
+            <span>Barbeiros ativos</span>
+
+            <strong>6</strong>
+
+            <small>
+              Todos disponíveis
+            </small>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="dashboard-grid">
+
+        <div class="panel appointments-panel">
+
+          <div class="panel-header">
+            <div>
+              <h2>Agendamentos de hoje</h2>
+
+              <span>
+                Quinta-feira
+              </span>
+            </div>
+
+            <button class="link-button">
+              Ver todos
+            </button>
+          </div>
+
+          <div class="appointment">
+            <div class="appointment-time">
+              09:00
+            </div>
+
+            <div class="appointment-info">
+              <strong>João Silva</strong>
+              <span>Corte masculino</span>
+            </div>
+
+            <span class="appointment-status confirmed">
+              Confirmado
+            </span>
+          </div>
+
+          <div class="appointment">
+            <div class="appointment-time">
+              10:00
+            </div>
+
+            <div class="appointment-info">
+              <strong>Pedro Santos</strong>
+              <span>Barba</span>
+            </div>
+
+            <span class="appointment-status confirmed">
+              Confirmado
+            </span>
+          </div>
+
+          <div class="appointment">
+            <div class="appointment-time">
+              11:30
+            </div>
+
+            <div class="appointment-info">
+              <strong>Lucas Oliveira</strong>
+              <span>Corte + barba</span>
+            </div>
+
+            <span class="appointment-status pending">
+              Pendente
+            </span>
+          </div>
+
+          <div class="appointment">
+            <div class="appointment-time">
+              13:00
+            </div>
+
+            <div class="appointment-info">
+              <strong>Marcos Costa</strong>
+              <span>Corte masculino</span>
+            </div>
+
+            <span class="appointment-status confirmed">
+              Confirmado
+            </span>
+          </div>
+
+        </div>
+
+        <div class="panel services-panel">
+
+          <div class="panel-header">
+            <div>
+              <h2>Serviços mais procurados</h2>
+
+              <span>
+                Este mês
+              </span>
+            </div>
+          </div>
+
+          <div class="service">
+            <div class="service-info">
+              <span>Corte masculino</span>
+              <strong>82%</strong>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar progress-blue width-82"></div>
+            </div>
+          </div>
+
+          <div class="service">
+            <div class="service-info">
+              <span>Barba</span>
+              <strong>66%</strong>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar progress-red width-66"></div>
+            </div>
+          </div>
+
+          <div class="service">
+            <div class="service-info">
+              <span>Corte + barba</span>
+              <strong>58%</strong>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar progress-blue width-58"></div>
+            </div>
+          </div>
+
+          <div class="service">
+            <div class="service-info">
+              <span>Sobrancelha</span>
+              <strong>31%</strong>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar progress-red width-31"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+</div>
